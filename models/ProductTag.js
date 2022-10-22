@@ -15,7 +15,7 @@ id: {
 product_id: {
   type: DataTypes.INTEGER,
   references: {
-    model: "category",
+    model: "product",
     key: "id",
   },
 },

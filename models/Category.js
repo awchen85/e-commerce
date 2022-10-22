@@ -1,5 +1,3 @@
-const { INTEGER } = require('sequelize');
-const { STRING } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -17,7 +15,7 @@ Category.init(
   },
   {
     category_name: {
-      DataTypes: STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
   },
